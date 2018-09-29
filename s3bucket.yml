@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: S3 bucket create
+Parameters:
+  TestBucketName:
+    Description: Name for BucketName
+    Type: String
+Resources:
+  TestBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Delete
+    Properties: 
+      BucketName: !Ref TestBucketName
+      Tags:
+        - Key: Purpose
+          Value: Test
+      VersioningConfiguration: 
+        Status: Enabled
+    
