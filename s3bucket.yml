@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: '2010-09-09'
 Description: S3 bucket create
 Parameters:
   TestBucketName:
-    Description: Name for BucketName
+    Description: Name for Bucket Name
     Type: String
 Resources:
   TestBucket:
